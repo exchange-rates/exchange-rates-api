@@ -8,7 +8,8 @@
     "start": "node index",
     "build": "babel src --out-dir lib",
     "lint": "eslint src --ext .js --ext .jsx",
-    "test": "ava"
+    "test": "ava",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "babel": "^6.23.0",
